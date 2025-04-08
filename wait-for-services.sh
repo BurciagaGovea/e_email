@@ -13,12 +13,12 @@ if [ -z "$RABBITMQ_HOST" ]; then
 fi
 
 # Esperar MySQL
-echo "Esperando a que MySQL esté disponible en $DB_HOST:3306..."
-while ! nc -z "$DB_HOST" 3306; do
-  echo "MySQL aún no está listo. Esperando..."
-  sleep 2
-done
-echo "MySQL está disponible."
+# echo "Esperando a que MySQL esté disponible en $DB_HOST:3306..."
+# while ! nc -z "$DB_HOST" 3306; do
+#   echo "MySQL aún no está listo. Esperando..."
+#   sleep 2
+# done
+# echo "MySQL está disponible."
 
 # Esperar RabbitMQ
 # echo "Esperando a que RabbitMQ esté disponible en $RABBITMQ_HOST:5672..."
