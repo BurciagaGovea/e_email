@@ -2,10 +2,10 @@
 set -e
 
 # Verificar que las variables estén definidas
-if [ -z "$DB_HOST" ]; then
-  echo "Error: La variable DB_HOST no está definida."
-  exit 1
-fi
+# if [ -z "$DB_HOST" ]; then
+#   echo "Error: La variable DB_HOST no está definida."
+#   exit 1
+# fi
 
 if [ -z "$RABBITMQ_HOST" ]; then
   echo "Error: La variable RABBITMQ_HOST no está definida."
